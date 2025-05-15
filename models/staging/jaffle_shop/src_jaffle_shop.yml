@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: estudos-337621
+    schema: dbt_raw
+    tables:
+      - name: customers
+      - name: orders

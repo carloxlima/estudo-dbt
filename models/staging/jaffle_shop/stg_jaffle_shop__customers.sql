@@ -4,4 +4,4 @@ select
     first_name,
     last_name
 
-from `estudos-337621`.`dbt_raw`.`customers`
+from {{ source('jaffle_shop', 'customers') }}
