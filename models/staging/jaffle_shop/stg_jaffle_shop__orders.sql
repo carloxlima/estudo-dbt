@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from `estudos-337621.dbt_raw.orders`
+from {{ source('jaffle_shop', 'orders') }}
