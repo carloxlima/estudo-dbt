@@ -19,6 +19,7 @@ with source_data as (
 
 select 
 '{{ env_var('DBT_ENV_DATE') }}'  as id,
+'{{ var('status') }}'  as id2,
 id as coisa
 from source_data
 
