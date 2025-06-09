@@ -18,7 +18,8 @@ with source_data as (
 )
 
 select 
-'{{ env_var('DBT_ENV_DATE') }}'  as id
+'{{ env_var('DBT_ENV_DATE') }}'  as id,
+id as coisa
 from source_data
 
 
